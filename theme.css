@@ -1,0 +1,16 @@
+:root {
+  --zavo-bg: #0D1420;
+  --zavo-surface: #171721;
+  --zavo-card: #1e1e2a;
+  --zavo-button-secondary: #272735;
+  --zavo-text: #ededf3;
+  --zavo-text-muted: #c3c3cc;
+  --zavo-border: #70707d;
+  --zavo-primary: #5266eb;
+  --zavo-white: #ffffff;
+  --zavo-radius-card: 12px;
+  --zavo-radius-control: 32px;
+  --zavo-max-width: 1200px;
+  --zavo-section-gap: 72px;
+  color-scheme: dark;
+}

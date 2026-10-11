@@ -1,0 +1,58 @@
+/* Customer pages share the storefront's warm palette and clear controls. */
+:root {
+  --zavo-bg: #faf9f6;
+  --zavo-surface: #f0eee8;
+  --zavo-card: #fff;
+  --zavo-button-secondary: #eeece6;
+  --zavo-text: #242923;
+  --zavo-text-muted: #63675f;
+  --zavo-border: #dedfd6;
+  --zavo-primary: #a8442a;
+  --zavo-radius-card: 16px;
+  --zavo-radius-control: 8px;
+  --navy: #242923;
+  --muted: #63675f;
+  --line: #dedfd6;
+  color-scheme: light;
+}
+body.customer-page, body.customer-auth { background: #faf9f6; color: #242923; }
+.logo { color: #29372e; letter-spacing: -1.6px; }
+.logo span { color: #a8442a; }
+.eyebrow { color: #945336; font-size: 9px; letter-spacing: 2px; }
+.customer-auth { background: radial-gradient(ellipse at top left, #e8ece0, transparent 65%), #faf9f6; padding: 30px 18px; }
+.customer-auth .login-card { border: 1px solid #dedfd6; border-radius: 18px; padding: 42px; box-shadow: 0 20px 70px #29372e08; background: #fff; }
+.customer-auth .login-card .logo { margin-bottom: 35px; }
+.customer-auth h1, .customer-panel h1 { font-size: 31px; line-height: 1.2; letter-spacing: -1.2px; font-weight: 600; }
+.customer-auth p, .customer-panel p { color: #63675f; line-height: 1.8; font-size: 13px; }
+.customer-auth label, .customer-panel label { font-size: 12px; color: #46503e; gap: 8px; }
+.customer-auth input, .customer-panel input, .customer-panel textarea { padding: 13px 14px; min-height: 48px; background: #faf9f6; color: #242923; border: 1px solid #d9ddd1; border-radius: 8px; font-size: 14px; }
+.customer-panel input:disabled, .customer-panel textarea:disabled { background: #f0eee8; color: #62675c; opacity: 1; }
+.customer-auth input:focus, .customer-panel input:focus, .customer-panel textarea:focus { border-color: #a8442a; box-shadow: 0 0 0 3px #a8442a14; }
+.customer-auth .button, .customer-panel .button { min-height: 48px; background: #a8442a; color: #fff; border-radius: 8px; font-size: 13px; }
+.customer-auth .button:hover, .customer-panel .button:hover { background: #89351f; }
+.customer-auth .button:disabled, .customer-panel .button:disabled { background: #e5e8dd; color: #626b56; }
+.customer-auth .text-button { color: #596a4c; min-height: 44px; display: flex; align-items: center; justify-content: center; font-size: 12px; }
+.customer-auth .text-button:hover { color: #a8442a; }
+.customer-auth .error, .customer-panel .error { color: #a33b28; background: #fff3ed; border-radius: 7px; }
+.customer-shell { max-width: 960px; padding: 35px 30px 60px; }
+.customer-nav { gap: 24px; padding-bottom: 25px; border-bottom: 1px solid #dedfd6; }
+.customer-nav > a:not(.logo) { font-size: 12px; color: #526047; min-height: 40px; display: inline-flex; align-items: center; }
+.customer-nav > a:hover { color: #a8442a; }
+.customer-panel { max-width: 720px; margin: 32px auto; padding: 38px; background: #fff; border-color: #dedfd6; border-radius: 16px; }
+.customer-panel form { margin-top: 24px; gap: 20px; }
+.customer-order { background: #fff; border: 1px solid #dedfd6; border-left: 3px solid #a8442a; border-radius: 12px; padding: 27px; }
+.customer-order h2 { color: #29372e; line-height: 1.6; font-size: 15px; }
+.customer-order p { font-size: 13px; color: #5c6652; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid #a8442a; outline-offset: 4px; }
+@media (max-width: 600px) {
+  .customer-auth { padding: 20px 14px; }
+  .customer-auth .login-card { padding: 30px 24px; }
+  .customer-auth h1, .customer-panel h1 { font-size: 28px; }
+  .customer-shell { padding: 24px 16px 45px; }
+  .customer-nav { gap: 10px 18px; }
+  .customer-nav .logo { flex-basis: 100%; margin-bottom: 8px; }
+  .customer-panel { padding: 25px 20px; }
+  .customer-order { padding: 22px 20px; }
+  .customer-auth input, .customer-panel input, .customer-panel textarea { font-size: 16px; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
